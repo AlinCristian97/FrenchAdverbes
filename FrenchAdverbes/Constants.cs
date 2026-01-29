@@ -31,6 +31,7 @@ public class Constants
     // M
     public const string Malheureusement = "malheureusement";
     public const string Maintenant = "maintenant";
+    public const string Mieux = "mieux";
 
     // N
 
