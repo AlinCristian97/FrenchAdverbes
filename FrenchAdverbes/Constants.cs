@@ -32,6 +32,7 @@ public class Constants
     public const string Malheureusement = "malheureusement";
     public const string Maintenant = "maintenant";
     public const string Mieux = "mieux";
+    public const string Moins = "moins";
 
     // N
 
@@ -67,6 +68,9 @@ public class Constants
 
     // T
     public const string Tres = "très";
+
+    // U
+    public const string Uniquement = "uniquement";
 
     // etc..
 
