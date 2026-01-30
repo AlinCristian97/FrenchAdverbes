@@ -63,6 +63,9 @@ public class Constants
     public const string Passionnement = "passionnément";
     public const string Puissamment = "puissamment";
 
+    // Q
+    public const string Quand = "quand";
+
     // S
     public const string Souvent = "souvent";
 
