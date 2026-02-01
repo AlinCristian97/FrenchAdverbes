@@ -28,6 +28,7 @@ public class Constants
 
     // E
     public const string Extremement = "extrêmement";
+    public const string Encore = "encore";
 
     // J
     public const string Juste = "juste";
