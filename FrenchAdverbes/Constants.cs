@@ -24,9 +24,13 @@ public class Constants
     public const string Dedans = "dedans";
     public const string Dehors = "dehors";
     public const string Devant = "devant";
+    public const string Derriere = "derrière";
 
     // J
     public const string Juste = "juste";
+
+    // L
+    public const string Loin = "loin";
 
     // M
     public const string Malheureusement = "malheureusement";
