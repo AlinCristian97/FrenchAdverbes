@@ -83,6 +83,9 @@ public class Constants
     // U
     public const string Uniquement = "uniquement";
 
+    // V
+    public const string Vraiment = "vraiment";
+
     // etc..
 
 }
