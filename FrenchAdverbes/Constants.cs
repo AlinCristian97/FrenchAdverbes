@@ -88,12 +88,14 @@ public class Constants
 
     // T
     public const string Tres = "très";
+    public const string Tranquillement = "tranquillement";
 
     // U
     public const string Uniquement = "uniquement";
 
     // V
     public const string Vraiment = "vraiment";
+    public const string Vite = "vite";
 
     // etc..
 
