@@ -35,6 +35,7 @@ public class Constants
 
     // L
     public const string Loin = "loin";
+    public const string Lors = "lors";
 
     // M
     public const string Meme = "même";
