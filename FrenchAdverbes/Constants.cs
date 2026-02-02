@@ -30,6 +30,9 @@ public class Constants
     public const string Extremement = "extrêmement";
     public const string Encore = "encore";
 
+    // F
+    public const string Futilement = "futilement";
+
     // J
     public const string Juste = "juste";
 
@@ -75,6 +78,9 @@ public class Constants
 
     // Q
     public const string Quand = "quand";
+
+    // R
+    public const string Rapidement = "rapidement";
 
     // S
     public const string Souvent = "souvent";
