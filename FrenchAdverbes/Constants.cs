@@ -25,6 +25,7 @@ public class Constants
     public const string Dehors = "dehors";
     public const string Devant = "devant";
     public const string Derriere = "derrière";
+    public const string Deja = "déjà";
 
     // E
     public const string Extremement = "extrêmement";
