@@ -52,6 +52,7 @@ public class Constants
     // N
 
     // P
+    public const string Pourtant = "pourtant";
     public const string Pres = "près";
     public const string Parfois = "parfois";
     public const string Partout = "partout";
