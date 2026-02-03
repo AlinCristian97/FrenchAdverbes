@@ -31,6 +31,7 @@ public class Constants
     public const string Extremement = "extrêmement";
     public const string Encore = "encore";
     public const string Enfin = "enfin";
+    public const string Egalement = "également";
 
     // F
     public const string Futilement = "futilement";
