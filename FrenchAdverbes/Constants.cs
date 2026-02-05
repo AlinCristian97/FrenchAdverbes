@@ -57,6 +57,7 @@ public class Constants
     public const string Moins = "moins";
 
     // N
+    public const string Notamment = "notamment";
 
     // P
     public const string Pourtant = "pourtant";
