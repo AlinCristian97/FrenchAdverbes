@@ -19,6 +19,7 @@ public class Constants
 
     // C
     public const string Combien = "combien";
+    public const string Certainement = "certainement";
 
     // D
     public const string Dedans = "dedans";
@@ -37,9 +38,11 @@ public class Constants
 
     // F
     public const string Futilement = "futilement";
+    public const string Finalement = "finalement";
 
     // J
     public const string Juste = "juste";
+    public const string Joyeusement = "joyeusement";
 
     // L
     public const string Loin = "loin";
@@ -91,10 +94,13 @@ public class Constants
     // S
     public const string Souvent = "souvent";
     public const string Subitement = "subitement";
+    public const string Soudain = "soudain";
+
 
     // T
     public const string Tres = "très";
     public const string Tranquillement = "tranquillement";
+    public const string Tard = "tard";
 
     // U
     public const string Uniquement = "uniquement";
