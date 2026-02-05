@@ -23,6 +23,7 @@ public class Constants
     public const string Certainement = "certainement";
 
     // D
+    public const string Debout = "debout";
     public const string Dedans = "dedans";
     public const string Dehors = "dehors";
     public const string Devant = "devant";
@@ -38,6 +39,7 @@ public class Constants
     public const string Evidemment = "évidemment";
 
     // F
+    public const string Forcement = "forcément";
     public const string Futilement = "futilement";
     public const string Finalement = "finalement";
 
@@ -60,6 +62,7 @@ public class Constants
     public const string Notamment = "notamment";
 
     // P
+    public const string Presque = "presque";
     public const string Pourtant = "pourtant";
     public const string Pres = "près";
     public const string Parfois = "parfois";
