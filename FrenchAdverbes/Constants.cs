@@ -26,12 +26,14 @@ public class Constants
     public const string Devant = "devant";
     public const string Derriere = "derrière";
     public const string Deja = "déjà";
+    public const string Dorenavant = "dorénavant";
 
     // E
     public const string Extremement = "extrêmement";
     public const string Encore = "encore";
     public const string Enfin = "enfin";
     public const string Egalement = "également";
+    public const string Evidemment = "évidemment";
 
     // F
     public const string Futilement = "futilement";
@@ -88,6 +90,7 @@ public class Constants
 
     // S
     public const string Souvent = "souvent";
+    public const string Subitement = "subitement";
 
     // T
     public const string Tres = "très";
