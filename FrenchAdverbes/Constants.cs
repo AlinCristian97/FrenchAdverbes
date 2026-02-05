@@ -4,6 +4,7 @@ public class Constants
 {
 
     // A
+    public const string Autrefois = "autrefois";
     public const string Absolument = "absolument";
     public const string Ailleurs = "ailleurs";
     public const string AujourdHui = "aujourd'hui";
@@ -92,9 +93,11 @@ public class Constants
     public const string Rapidement = "rapidement";
 
     // S
+    public const string Seulement = "seulement";
     public const string Souvent = "souvent";
     public const string Subitement = "subitement";
     public const string Soudain = "soudain";
+    public const string Soigneusement = "soigneusement";
 
 
     // T
