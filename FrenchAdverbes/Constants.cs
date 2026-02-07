@@ -13,6 +13,7 @@ public class Constants
     public const string Avant = "avant";
     public const string AvantHier = "avant-hier";
     public const string Apres = "après";
+    public const string Aucunement = "aucunement";
 
     // B
     public const string Beaucoup = "beaucoup";
@@ -42,6 +43,9 @@ public class Constants
     public const string Forcement = "forcément";
     public const string Futilement = "futilement";
     public const string Finalement = "finalement";
+
+    // I
+    public const string Immediatement = "immédiatement";
 
     // J
     public const string Juste = "juste";
