@@ -31,6 +31,7 @@ public class Constants
     public const string Derriere = "derrière";
     public const string Deja = "déjà";
     public const string Dorenavant = "dorénavant";
+    public const string Directement = "directement";
 
     // E
     public const string Extremement = "extrêmement";
