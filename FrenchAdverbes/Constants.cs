@@ -24,6 +24,7 @@ public class Constants
     public const string Certainement = "certainement";
 
     // D
+    public const string Desormais = "désormais";
     public const string Debout = "debout";
     public const string Dedans = "dedans";
     public const string Dehors = "dehors";
