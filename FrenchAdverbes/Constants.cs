@@ -52,6 +52,7 @@ public class Constants
     // J
     public const string Juste = "juste";
     public const string Joyeusement = "joyeusement";
+    public const string Justement = "justement";
 
     // L
     public const string Loin = "loin";
