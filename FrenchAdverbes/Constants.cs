@@ -4,6 +4,7 @@ public class Constants
 {
 
     // A
+    public const string Alentour = "alentour";
     public const string Autrefois = "autrefois";
     public const string Absolument = "absolument";
     public const string Ailleurs = "ailleurs";
@@ -57,6 +58,7 @@ public class Constants
     // L
     public const string Loin = "loin";
     public const string Lors = "lors";
+    public const string Latéralement = "latéralement";
 
     // M
     public const string Meme = "même";
