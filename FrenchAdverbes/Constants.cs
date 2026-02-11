@@ -4,6 +4,7 @@ public class Constants
 {
 
     // A
+    public const string Alternativement = "alternativement";  
     public const string Apparemment = "apparemment";
     public const string Alentour = "alentour";
     public const string Autrefois = "autrefois";
@@ -24,6 +25,7 @@ public class Constants
     // C
     public const string Combien = "combien";
     public const string Certainement = "certainement";
+    public const string Completement = "complètement";
 
     // D
     public const string Desormais = "désormais";
@@ -118,6 +120,7 @@ public class Constants
     public const string Tres = "très";
     public const string Tranquillement = "tranquillement";
     public const string Tard = "tard";
+    public const string Tant = "tant";
 
     // U
     public const string Uniquement = "uniquement";
