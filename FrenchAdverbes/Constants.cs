@@ -4,6 +4,7 @@ public class Constants
 {
 
     // A
+    public const string Apparemment = "apparemment";
     public const string Alentour = "alentour";
     public const string Autrefois = "autrefois";
     public const string Absolument = "absolument";
