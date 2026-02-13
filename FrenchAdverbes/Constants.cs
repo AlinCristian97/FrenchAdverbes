@@ -76,6 +76,7 @@ public class Constants
     public const string Notamment = "notamment";
 
     // P
+    public const string Proprement = "proprement";
     public const string Presque = "presque";
     public const string Pourtant = "pourtant";
     public const string Pres = "près";
