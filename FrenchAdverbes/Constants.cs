@@ -120,6 +120,7 @@ public class Constants
 
 
     // T
+    public const string Totalement = "totalement";
     public const string Tres = "très";
     public const string Tranquillement = "tranquillement";
     public const string Tard = "tard";
