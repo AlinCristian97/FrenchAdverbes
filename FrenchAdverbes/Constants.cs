@@ -112,6 +112,7 @@ public class Constants
     public const string Rapidement = "rapidement";
 
     // S
+    public const string Super = "super";
     public const string Seulement = "seulement";
     public const string Souvent = "souvent";
     public const string Subitement = "subitement";
