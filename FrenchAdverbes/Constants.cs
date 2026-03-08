@@ -27,6 +27,7 @@ public class Constants
     public const string Certainement = "certainement";
     public const string Completement = "complètement";
     public const string Comment = "comment";
+    public const string Certes = "certes";
 
     // D
     public const string Desormais = "désormais";
@@ -65,6 +66,7 @@ public class Constants
     public const string Loin = "loin";
     public const string Lors = "lors";
     public const string Latéralement = "latéralement";
+    public const string Littéralement = "littéralement";
 
     // M
     public const string Meme = "même";
@@ -75,6 +77,7 @@ public class Constants
 
     // N
     public const string Notamment = "notamment";
+    public const string Neanmoins = "néanmoins";
 
     // P
     public const string Proprement = "proprement";
@@ -119,7 +122,6 @@ public class Constants
     public const string Subitement = "subitement";
     public const string Soudain = "soudain";
     public const string Soigneusement = "soigneusement";
-
 
     // T
     public const string Totalement = "totalement";
