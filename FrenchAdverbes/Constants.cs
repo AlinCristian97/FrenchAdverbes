@@ -67,6 +67,8 @@ public class Constants
     public const string Lors = "lors";
     public const string Latéralement = "latéralement";
     public const string Littéralement = "littéralement";
+    public const string Legerement = "légèrement";
+    public const string Largement = "largement";
 
     // M
     public const string Meme = "même";
