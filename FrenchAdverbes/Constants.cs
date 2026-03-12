@@ -65,8 +65,8 @@ public class Constants
     // L
     public const string Loin = "loin";
     public const string Lors = "lors";
-    public const string Latéralement = "latéralement";
-    public const string Littéralement = "littéralement";
+    public const string Lateralement = "latéralement";
+    public const string Litteralement = "littéralement";
     public const string Legerement = "légèrement";
     public const string Largement = "largement";
 
@@ -138,7 +138,4 @@ public class Constants
     // V
     public const string Vraiment = "vraiment";
     public const string Vite = "vite";
-
-    // etc..
-
 }
