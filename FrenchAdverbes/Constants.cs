@@ -2,6 +2,7 @@
 
 public class Constants
 {
+    public const int NumberOfRandomExampleSentences = 3;
 
     // A
     public const string Alternativement = "alternativement";  
@@ -138,4 +139,11 @@ public class Constants
     // V
     public const string Vraiment = "vraiment";
     public const string Vite = "vite";
+
+    // Formatting
+    public const string LongDivider = "════════════════════════════════════════════════════════════════";
+    public const string ShortDivider = "────────────────────────────────────────────────────────────────";
+    public const string GuillemetOuvrant = "«";
+    public const string GuillemetFermant = "»";
+    public const string Space = " ";
 }
