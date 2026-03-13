@@ -36,13 +36,13 @@ Follow **all three steps** in order. Do not skip any step.
 
 ```json
 {
-  "description": "En français, l'adverbe « {adverbe} » sert à caractériser et à préciser la nature d'un nom auquel il se rapporte dans une phrase. Son usage est répandu dans divers registres de langue, du familier au soutenu, et il contribue à la richesse descriptive du discours.",
+  "description": "L'adverbe « comment » signifie 'how' en anglais. C'est un adverbe interrogatif qui porte sur la manière ou le moyen. Il s'emploie dans les questions directes (« Comment vas-tu ? ») et indirectes (« Je ne sais pas comment faire »). Il peut aussi exprimer la surprise (« Comment ! »).",
   "sentences": [
-    "L'architecte a présenté son projet devant le jury, qui l'a trouvé {adverbe}, saluant notamment son approche originale et respectueuse de l'environnement.",
-    "Les critiques ont unanimement décrit le nouveau spectacle comme étant {adverbe}, soulignant la qualité exceptionnelle de la mise en scène.",
-    "En observant attentivement le comportement des participants, le chercheur a constaté que leur état émotionnel était systématiquement {adverbe}.",
-    "Le guide touristique a expliqué que ce monument historique du dix-huitième siècle était considéré comme {adverbe} par les visiteurs du monde entier.",
-    "Le photographe a su capturer un instant précieux que les visiteurs de l'exposition ont unanimement qualifié de {adverbe}."
+    "Comment allez-vous depuis la dernière fois ?",
+    "Je ne comprends pas comment il a réussi cet examen.",
+    "Comment ça se fait que tu sois déjà là ?",
+    "Explique-moi comment fonctionne cette machine.",
+    "Comment ! Tu n'es pas encore prêt ?"
   ]
 }
 ```
@@ -71,4 +71,4 @@ Given the adverbe **`gracieusement`**:
    Add `.Concat(G)` between `.Concat(F)` and `.Concat(I)` in `All`.
    Add `[Constants.Gracieusement[0]] = G,` to `BuildLetterMap()` and update the capacity from `18` to `19`.
 
-3. **JSON** — create `FrenchAdverbes\Sentences\G\gracieusement.json` with the template above, replacing `{adverbe}` with `gracieusement`.
+3. **JSON** — create `FrenchAdverbes\Sentences\G\gracieusement.json` with the template above, giving proper description and sentences in natural french.
