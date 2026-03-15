@@ -5,7 +5,8 @@ public class Constants
     public const int NumberOfRandomExampleSentences = 3;
 
     // A
-    public const string Alternativement = "alternativement";  
+    public const string Alternativement = "alternativement";
+    public const string Attentivement = "attentivement";
     public const string Apparemment = "apparemment";
     public const string Alentour = "alentour";
     public const string Autrefois = "autrefois";

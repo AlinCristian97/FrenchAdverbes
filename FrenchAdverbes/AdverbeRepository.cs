@@ -14,6 +14,7 @@ internal static class AdverbeRepository
     public static readonly IReadOnlyList<string> A = new[]
     {
         Constants.Alternativement,
+        Constants.Attentivement,
         Constants.Apparemment,
         Constants.Alentour,
         Constants.Autrefois,
