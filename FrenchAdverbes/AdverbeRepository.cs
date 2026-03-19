@@ -156,6 +156,7 @@ internal static class AdverbeRepository
 
     public static readonly IReadOnlyList<string> S = new[]
     {
+        Constants.Surtout,
         Constants.Super,
         Constants.Seulement,
         Constants.Souvent,
