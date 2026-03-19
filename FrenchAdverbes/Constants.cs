@@ -43,6 +43,7 @@ public class Constants
     public const string Directement = "directement";
 
     // E
+    public const string Ensemble = "ensemble";
     public const string Extremement = "extrêmement";
     public const string Encore = "encore";
     public const string Enfin = "enfin";
