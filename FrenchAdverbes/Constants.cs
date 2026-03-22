@@ -128,6 +128,7 @@ public class Constants
     public const string Subitement = "subitement";
     public const string Soudain = "soudain";
     public const string Soigneusement = "soigneusement";
+    public const string Soudainement = "soudainement";
 
     // T
     public const string Totalement = "totalement";
