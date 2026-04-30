@@ -1,0 +1,7 @@
+namespace FrenchAdverbes.AllConstants;
+
+public partial class Constants
+{
+    public const string Notamment = "notamment";
+    public const string Neanmoins = "néanmoins";
+}
