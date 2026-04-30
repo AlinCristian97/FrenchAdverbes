@@ -8,5 +8,10 @@ internal static partial class AdverbeRepository
     {
         Constants.Beaucoup,
         Constants.Bien,
+        Constants.Bientot,
+        Constants.Brievement,
+        Constants.Brutalement,
+        Constants.Brusquement,
+        Constants.Bizarrement,
     };
 }
