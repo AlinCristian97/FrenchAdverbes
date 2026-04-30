@@ -20,5 +20,10 @@ internal static partial class AdverbeRepository
         Constants.AvantHier,
         Constants.Apres,
         Constants.Aucunement,
+        Constants.Actuellement,
+        Constants.Autrement,
+        Constants.Assez,
+        Constants.Amplement,
+        Constants.Auparavant,
     };
 }

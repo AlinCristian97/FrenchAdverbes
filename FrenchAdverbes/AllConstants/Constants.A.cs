@@ -16,4 +16,9 @@ public partial class Constants
     public const string AvantHier = "avant-hier";
     public const string Apres = "après";
     public const string Aucunement = "aucunement";
+    public const string Actuellement = "actuellement";
+    public const string Autrement = "autrement";
+    public const string Assez = "assez";
+    public const string Amplement = "amplement";
+    public const string Auparavant = "auparavant";
 }
