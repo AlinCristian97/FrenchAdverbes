@@ -19,6 +19,7 @@ internal static partial class AdverbeRepository
         .Concat(D)
         .Concat(E)
         .Concat(F)
+        .Concat(G)
         .Concat(I)
         .Concat(J)
         .Concat(L)
@@ -35,7 +36,7 @@ internal static partial class AdverbeRepository
 
     private static IReadOnlyDictionary<char, IReadOnlyList<string>> BuildLetterMap()
     {
-        return new Dictionary<char, IReadOnlyList<string>>(18)
+        return new Dictionary<char, IReadOnlyList<string>>(19)
         {
             [Constants.Alternativement[0]] = A,
             [Constants.Beaucoup[0]] = B,
@@ -43,6 +44,7 @@ internal static partial class AdverbeRepository
             [Constants.Debout[0]] = D,
             [Constants.Encore[0]] = E,
             [Constants.Finalement[0]] = F,
+            [Constants.Gracieusement[0]] = G,
             [Constants.Immediatement[0]] = I,
             [Constants.Jadis[0]] = J,
             [Constants.Loin[0]] = L,
