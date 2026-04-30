@@ -1,4 +1,5 @@
-﻿using FrenchAdverbes.AllConstants;
+﻿using FrenchAdverbes.AllAdverbeRepository;
+using FrenchAdverbes.AllConstants;
 
 namespace FrenchAdverbes;
 
