@@ -11,5 +11,10 @@ internal static partial class AdverbeRepository
         Constants.Enfin,
         Constants.Egalement,
         Constants.Evidemment,
+        Constants.Effectivement,
+        Constants.Entierement,
+        Constants.Essentiellement,
+        Constants.Etrangement,
+        Constants.Eventuellement,
     };
 }
