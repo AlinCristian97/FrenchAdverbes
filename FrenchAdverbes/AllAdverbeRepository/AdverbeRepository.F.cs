@@ -10,5 +10,10 @@ internal static partial class AdverbeRepository
         Constants.Futilement,
         Constants.Finalement,
         Constants.Fixement,
+        Constants.Frequemment,
+        Constants.Franchement,
+        Constants.Fermement,
+        Constants.Favorablement,
+        Constants.Furieusement,
     };
 }
