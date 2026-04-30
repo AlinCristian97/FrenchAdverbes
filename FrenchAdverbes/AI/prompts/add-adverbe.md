@@ -4,48 +4,74 @@
 
 The user provides a French adverbe to add to the project.
 
+## Input
+
+- **Adverbe value**: the French word itself (e.g. `gracieusement`, `également`).
+- **Constant name**: the C# identifier to use. If not provided, derive it from the adverbe value by removing diacritics and using PascalCase (e.g. `également` → `Egalement`, `peut-être` → `PeutEtre`, `aujourd'hui` → `AujourdHui`).
+
 ## Steps
 
 Follow **all three steps** in order. Do not skip any step.
 
-### 1. Add the constant to `FrenchAdverbes\Constants.cs`
+### 1. Add the constant to the split `Constants` partial file
 
-- Find the correct **letter section** (e.g. `// A`, `// B`, …) based on the adverbe's **base first letter** (strip diacritics: é→e, ê→e, à→a, etc.).
-- If no section exists for that letter, create one with a `// X` comment, placed in alphabetical order among the existing sections. Keep it **before** the `// Formatting` section at the bottom.
-- Add a `public const string` entry inside that section.
-- **Property name rules:**
-  - PascalCase, **no accented characters** (e.g. `Deja` not `Déjà`, `Evidemment` not `Évidemment`).
-  - If the adverbe contains a hyphen or apostrophe, remove the separator and PascalCase each part (e.g. `aujourd'hui` → `AujourdHui`, `peut-être` → `PeutEtre`).
-- **Value:** the adverbe exactly as written in French, lowercase, with all accents and special characters preserved (e.g. `"déjà"`, `"peut-être"`).
+- Edit: `FrenchAdverbes\AllConstants\Constants.{LETTER}.cs`
+- `{LETTER}` = uppercase ASCII first letter of the adverbe (strip diacritics: `é` → `E`, `à` → `A`, etc.).
+- Add the constant at the end of the class body:
 
-### 2. Add the constant reference to `FrenchAdverbes\AdverbeRepository.cs`
+```csharp
+public const string <ConstantName> = "<adverbe value>";
+```
 
-- Find the matching **letter list** (e.g. `public static readonly IReadOnlyList<string> A = new[] { … };`).
-- Append `Constants.<PropertyName>` to the end of that list (before the closing `};`), keeping the trailing comma style.
-- If no letter list exists for this letter:
-  1. Create a new `public static readonly IReadOnlyList<string> X = new[] { … };` field in alphabetical position among the existing letter lists.
-  2. Add `.Concat(X)` to the `All` super-list, in alphabetical order among the existing `.Concat(…)` calls.
-  3. Add a `[Constants.<SomeConstantStartingWithX>[0]] = X,` entry to `BuildLetterMap()` (pick any constant from the new letter whose value starts with the **unaccented** base letter), and increment the dictionary capacity accordingly.
+Rules:
+- Constant name: PascalCase, no accents, no hyphens, no apostrophes.
+- Value: lowercase adverbe, all accents and special characters preserved.
 
-### 3. Create the JSON file at `FrenchAdverbes\Sentences\{Letter}\{value}.json`
+### 2. Add the constant to the split `AdverbeRepository` partial file
 
-- `{Letter}` is the **uppercase base letter** (diacritics stripped, e.g. `E` for `également`).
-- `{value}` is the full adverbe value in lowercase with accents (the constant's value), e.g. `également.json`.
+- Edit: `FrenchAdverbes\AllAdverbeRepository\AdverbeRepository.{LETTER}.cs`
+- `{LETTER}` = same uppercase ASCII first letter as above.
+- Append `Constants.<ConstantName>,` at the **end** of the array, just before the closing `};`.
+
+> No other changes are needed — the `All` super-list and `BuildLetterMap()` in `AdverbeRepository.main.cs` already aggregate the per-letter arrays automatically.
+
+> **If the letter file has no list yet** (the file is an empty shell), add a new list:
+> ```csharp
+> public static readonly IReadOnlyList<string> {LETTER} = new[]
+> {
+>     Constants.<ConstantName>,
+> };
+> ```
+> Then also update `AdverbeRepository.main.cs`:
+> 1. Add `.Concat({LETTER})` to the `All` super-list in alphabetical order.
+> 2. Add `[Constants.<ConstantName>[0]] = {LETTER},` to `BuildLetterMap()` in alphabetical order, and increment the dictionary capacity by 1.
+
+### 3. Create the JSON sentence file
+
+- Determine the folder letter by stripping diacritics from the first character and uppercasing it (e.g. `é` → `E`).
+- Create the file at `FrenchAdverbes\Sentences\{Letter}\{adverbe value}.json`.
+- The file name must exactly match the adverbe **value** (including any accented characters), with a `.json` extension.
 - Use **UTF-8 encoding without BOM**.
-- Use the following structure, replacing every occurrence of `{adverbe}` with the adverbe value:
+- Use this structure:
 
 ```json
 {
-  "description": "L'adverbe « comment » signifie 'how' en anglais. C'est un adverbe interrogatif qui porte sur la manière ou le moyen. Il s'emploie dans les questions directes (« Comment vas-tu ? ») et indirectes (« Je ne sais pas comment faire »). Il peut aussi exprimer la surprise (« Comment ! »).",
+  "description": "<Two sentences in French describing the adverbe — what it means and how it is typically used, naturally in French, with the English translation in parentheses.>",
   "sentences": [
-    "Comment allez-vous depuis la dernière fois ?",
-    "Je ne comprends pas comment il a réussi cet examen.",
-    "Comment ça se fait que tu sois déjà là ?",
-    "Explique-moi comment fonctionne cette machine.",
-    "Comment ! Tu n'es pas encore prêt ?"
+    "<sentence 1>",
+    "<sentence 2>",
+    "<sentence 3>",
+    "<sentence 4>",
+    "<sentence 5>"
   ]
 }
 ```
+
+#### JSON content rules
+
+- **`description`**: Write exactly **2 French sentences**. The first sentence should explain the meaning of the adverbe naturally in French, with the English equivalent in parentheses.
+- **`sentences`**: Provide exactly **5 French sentences** that use the adverbe naturally. Each sentence should be **at least 15 words long** — avoid very short or trivial sentences.
+- The file must be encoded as **UTF-8 without BOM**.
 
 ## Validation
 
@@ -55,20 +81,36 @@ After completing all three steps, run a build to confirm there are no compilatio
 
 Given the adverbe **`gracieusement`**:
 
-1. **Constants.cs** — add under `// G` (new section, before `// I`):
-   ```csharp
-   // G
-   public const string Gracieusement = "gracieusement";
-   ```
+**`Constants.G.cs`** — at the end of the class:
 
-2. **AdverbeRepository.cs** — create list, update `All`, update `BuildLetterMap()`:
-   ```csharp
-   public static readonly IReadOnlyList<string> G = new[]
-   {
-       Constants.Gracieusement,
-   };
-   ```
-   Add `.Concat(G)` between `.Concat(F)` and `.Concat(I)` in `All`.
-   Add `[Constants.Gracieusement[0]] = G,` to `BuildLetterMap()` and update the capacity from `18` to `19`.
+```csharp
+public const string Gracieusement = "gracieusement";
+```
 
-3. **JSON** — create `FrenchAdverbes\Sentences\G\gracieusement.json` with the template above, giving proper description and sentences in natural french.
+**`AdverbeRepository.G.cs`** — append to the `G` array (or create it if the file is an empty shell):
+
+```csharp
+public static readonly IReadOnlyList<string> G = new[]
+{
+    Constants.Gracieusement,
+};
+```
+
+If `G` is newly created, also update `AdverbeRepository.main.cs`:
+- Add `.Concat(G)` between `.Concat(F)` and `.Concat(I)` in `All`.
+- Add `[Constants.Gracieusement[0]] = G,` to `BuildLetterMap()` and increment the dictionary capacity by 1.
+
+**`Sentences\G\gracieusement.json`**:
+
+```json
+{
+  "description": "« Gracieusement » (English: gracefully, graciously) est un adverbe qui décrit une action accomplie avec élégance, légèreté ou bienveillance. Il peut qualifier aussi bien un geste physique qu'un acte de générosité ou de politesse.",
+  "sentences": [
+    "La danseuse étoile s'est inclinée gracieusement devant le public qui l'acclamait avec une ferveur extraordinaire.",
+    "Il a gracieusement accepté de céder sa place à la vieille dame qui peionait à se tenir debout dans le wagon bondé.",
+    "La directrice a gracieusement remercié chacun des bénévoles pour leur engagement sans faille tout au long de l'événement.",
+    "L'oiseau planait gracieusement au-dessus des vagues, indifférent au vent violent qui soufflait depuis le large.",
+    "Elle a gracieusement décliné l'invitation en expliquant qu'elle avait déjà pris d'autres engagements pour ce soir-là."
+  ]
+}
+```
