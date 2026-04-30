@@ -15,5 +15,10 @@ internal static partial class AdverbeRepository
         Constants.Deja,
         Constants.Dorenavant,
         Constants.Directement,
+        Constants.Doucement,
+        Constants.Definitivement,
+        Constants.Deliberement,
+        Constants.Discretement,
+        Constants.Drastiquement,
     };
 }

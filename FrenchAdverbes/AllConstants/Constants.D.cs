@@ -11,4 +11,9 @@ public partial class Constants
     public const string Deja = "déjà";
     public const string Dorenavant = "dorénavant";
     public const string Directement = "directement";
+    public const string Doucement = "doucement";
+    public const string Definitivement = "définitivement";
+    public const string Deliberement = "délibérément";
+    public const string Discretement = "discrètement";
+    public const string Drastiquement = "drastiquement";
 }
