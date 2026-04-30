@@ -11,4 +11,9 @@ public partial class Constants
     public const string Journellement = "journellement";
     public const string Judicieusement = "judicieusement";
     public const string Juridiquement = "juridiquement";
+    public const string Jalousement = "jalousement";
+    public const string Jovialement = "jovialement";
+    public const string Justifiablement = "justifiablement";
+    public const string Judiciairement = "judiciairement";
+    public const string Jeunement = "jeunement";
 }

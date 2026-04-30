@@ -15,5 +15,10 @@ internal static partial class AdverbeRepository
         Constants.Journellement,
         Constants.Judicieusement,
         Constants.Juridiquement,
+        Constants.Jalousement,
+        Constants.Jovialement,
+        Constants.Justifiablement,
+        Constants.Judiciairement,
+        Constants.Jeunement,
     };
 }
