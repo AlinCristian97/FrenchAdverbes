@@ -11,5 +11,10 @@ internal static partial class AdverbeRepository
         Constants.Completement,
         Constants.Comment,
         Constants.Certes,
+        Constants.Clairement,
+        Constants.Constamment,
+        Constants.Couramment,
+        Constants.Consciemment,
+        Constants.Curieusement,
     };
 }
