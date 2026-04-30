@@ -10,5 +10,10 @@ internal static partial class AdverbeRepository
         Constants.Juste,
         Constants.Joyeusement,
         Constants.Justement,
+        Constants.Jamais,
+        Constants.Joliment,
+        Constants.Journellement,
+        Constants.Judicieusement,
+        Constants.Juridiquement,
     };
 }
