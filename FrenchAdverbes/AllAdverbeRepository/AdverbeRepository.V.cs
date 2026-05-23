@@ -8,5 +8,10 @@ internal static partial class AdverbeRepository
     {
         Constants.Vraiment,
         Constants.Vite,
+        Constants.Vivement,
+        Constants.Visiblement,
+        Constants.Volontairement,
+        Constants.Veritablement,
+        Constants.Vaillamment,
     };
 }
