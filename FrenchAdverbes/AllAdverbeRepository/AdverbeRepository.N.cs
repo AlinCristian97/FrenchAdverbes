@@ -8,5 +8,10 @@ internal static partial class AdverbeRepository
     {
         Constants.Notamment,
         Constants.Neanmoins,
+        Constants.Naturellement,
+        Constants.Nullement,
+        Constants.Nettement,
+        Constants.Notablement,
+        Constants.Nouvellement,
     };
 }
