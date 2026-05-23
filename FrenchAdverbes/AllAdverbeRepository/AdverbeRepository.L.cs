@@ -12,5 +12,10 @@ internal static partial class AdverbeRepository
         Constants.Litteralement,
         Constants.Legerement,
         Constants.Largement,
+        Constants.Longuement,
+        Constants.Lucidement,
+        Constants.Librement,
+        Constants.Lentement,
+        Constants.Logiquement,
     };
 }
