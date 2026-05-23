@@ -14,5 +14,10 @@ internal static partial class AdverbeRepository
         Constants.Soudain,
         Constants.Soigneusement,
         Constants.Soudainement,
+        Constants.Sincerement,
+        Constants.Sagement,
+        Constants.Solidement,
+        Constants.Spontanement,
+        Constants.Successivement,
     };
 }

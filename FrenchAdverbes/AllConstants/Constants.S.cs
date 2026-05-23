@@ -10,4 +10,9 @@ public partial class Constants
     public const string Soudain = "soudain";
     public const string Soigneusement = "soigneusement";
     public const string Soudainement = "soudainement";
+    public const string Sincerement = "sincèrement";
+    public const string Sagement = "sagement";
+    public const string Solidement = "solidement";
+    public const string Spontanement = "spontanément";
+    public const string Successivement = "successivement";
 }
