@@ -6,4 +6,3 @@ public partial class Constants
     public const string Quotidiennement = "quotidiennement";
     public const string Quasiment = "quasiment";
 }
-}
