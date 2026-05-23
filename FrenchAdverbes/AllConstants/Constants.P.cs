@@ -30,4 +30,9 @@ public partial class Constants
     public const string Purement = "purement";
     public const string Passionnement = "passionnément";
     public const string Puissamment = "puissamment";
+    public const string Pleinement = "pleinement";
+    public const string Perpetuellement = "perpétuellement";
+    public const string Precautionneusement = "précautionneusement";
+    public const string Ponctuellement = "ponctuellement";
+    public const string Paisiblement = "paisiblement";
 }

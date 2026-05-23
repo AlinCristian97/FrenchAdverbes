@@ -34,5 +34,10 @@ internal static partial class AdverbeRepository
         Constants.Purement,
         Constants.Passionnement,
         Constants.Puissamment,
+        Constants.Pleinement,
+        Constants.Perpetuellement,
+        Constants.Precautionneusement,
+        Constants.Ponctuellement,
+        Constants.Paisiblement,
     };
 }
