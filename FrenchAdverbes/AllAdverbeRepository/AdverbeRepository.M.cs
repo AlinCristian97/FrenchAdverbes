@@ -11,5 +11,10 @@ internal static partial class AdverbeRepository
         Constants.Maintenant,
         Constants.Mieux,
         Constants.Moins,
+        Constants.Manifestement,
+        Constants.Modestement,
+        Constants.Mutuellement,
+        Constants.Magnifiquement,
+        Constants.Meticuleusement,
     };
 }
